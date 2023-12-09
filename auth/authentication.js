@@ -77,7 +77,7 @@ const getProtectedData = async (user) => {
     const data = await response.json();
 
     // Redirect to the specified URL
-    window.location.href = data.redirectUrl;
+    window.location.href = `${(window, location.host)}${data.redirectUrl}`;
     console.log("Protected Data:", data);
   } catch (error) {
     console.error("Error fetching protected data:", error);

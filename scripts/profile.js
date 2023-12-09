@@ -1,4 +1,4 @@
-const app = document.querySelector(".app");
+const app = document.querySelector("#temp");
 
 const displayUserInfo = async () => {
   const session = sessionStorage.getItem("session");
